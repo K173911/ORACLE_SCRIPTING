@@ -1,4 +1,4 @@
-INSERT INTO TABLENAME
+INSERT INTO TABLE CUSTOMER
 (ID, USER_ID, USER_NAME, TRNSACTION_TYPE, AMOUNT, TRANSACTION_DATE, ACCOUNT_NUMBER,CATEGORY_TYPE,TO_ACCOUNT, TO_USERNAME,COMPANY)
 select ID.nextval,'1111', 'JOHN', decode(round(dbms_random.value(0,2)),0,'fund_transfer',1,'ibft',2,
 'bill_payment'),'$1000',  to_date('2021-01-01', 'yyyy-mm-dd')+trunc(dbms_random.value(1,1000)), '1245456',decode(round(dbms_random.value(0,2)),0,'credit',1,'utility',2,
